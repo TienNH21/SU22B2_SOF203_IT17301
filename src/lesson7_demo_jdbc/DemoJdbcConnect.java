@@ -21,7 +21,8 @@ public class DemoJdbcConnect {
                 .getConnection(dbUrl, dbUser, dbPass);
             System.out.println("Kết nối thành công");
             
-            Product p = new Product(0, "Áo thể thao", 10, 99999, "YELLOW", 1);
+            Product p = new Product(0, "Áo thể thao", 10,
+                99999, "YELLOW", 1);
             
             String query = "INSERT INTO san_pham"
                 + " (ten, so_luong, mau_sac, don_gia, danh_muc_id) "
